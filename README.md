@@ -13,11 +13,11 @@ Terraform을 이용한 IaC(Infrastructure as Code)를 구현하여 인프라의 
 
 ```mermaid
 graph LR
-    A[사용자] -->|Web Chat| B["Frontend (HTML/JS)"]
-    B -->|REST API| C["AWS Lambda URL"]
-    C --> D["Backend Lambda (Python)"]
-    D -->|Intent Analysis| E["Amazon Bedrock (Claude 3)"]
-    D -->|Query Data| F[("Amazon DynamoDB")]
+    A[사용자] -->|Web Chat| B[Frontend (HTML/JS)]
+    B -->|REST API| C[AWS Lambda URL]
+    C --> D[Backend Lambda (Python)]
+    D -->|Intent Analysis| E[Amazon Bedrock (Claude 3)]
+    D -->|Query Data| F[(Amazon DynamoDB)]
 
 기술 스택 (Tech Stack)
 Infrastructure
