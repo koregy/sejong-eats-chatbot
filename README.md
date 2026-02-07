@@ -2,7 +2,7 @@
 AWS Serverless 아키텍처와 생성형 AI(Amazon Bedrock)를 활용하여 구축한 고려대학교 세종캠퍼스 주변 맛집 추천 챗봇 서비스입니다.
 Terraform을 이용한 IaC(Infrastructure as Code)를 구현하여 인프라의 자동 배포 및 관리가 가능하며, 자연어 처리(NLP)를 통해 사용자의 의도를 파악하고 맞춤형 식당 정보를 제공합니다.
 
-## 실행 화면 (Demo)
+## 실행 화면
 <p align="center">
   <img src="./demo1.png" alt="검색 결과 화면" width="45%">
   <img src="./demo2.png" alt="상세 정보 화면" width="45%">
@@ -20,7 +20,7 @@ graph LR;
     D -->|Query Data| F[Amazon DynamoDB];
 ```
 
-## 기술 스택 (Tech Stack)
+## 기술 스택
 Infrastructure
 - Terraform: AWS 리소스(Lambda, DynamoDB, IAM, Function URL)의 프로비저닝 및 상태 관리
 - AWS Serverless: 서버 관리 부담이 없는 Lambda 기반 컴퓨팅 환경 구축
@@ -61,7 +61,7 @@ sejong_eats_v2/
 └── upload_real_data.py     # 데이터 마이그레이션 스크립트
 ```
 
-## 설치 및 배포 (Deployment)
+## 설치 및 배포
 이 프로젝트는 Terraform을 사용하여 AWS 환경에 자동으로 배포됩니다.
 
 1. 사전 요구 사항
