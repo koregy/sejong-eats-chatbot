@@ -89,9 +89,8 @@ python upload_real_data.py
 4. 프론트엔드 설정
 frontend/index.html 파일을 열고, 코드 상단 API_URL 상수에 Terraform 배포 결과로 얻은 URL을 입력합니다.
 
-## 추후 개선 계획 (Future Roadmap)
+## 추후 개선 계획
 현재 버전은 초기 모델(MVP)로서 핵심 기능 구현에 집중하였으며, 향후 다음과 같은 고도화 작업을 진행할 예정입니다.
-
 1.  **검색 알고리즘 최적화**
     * 현재의 키워드 매칭 방식을 넘어, RAG (Retrieval-Augmented Generation) 기법을 도입하여 문맥 기반의 검색 정확도를 향상
     * 사용자 피드백(검색 결과 클릭률 등)을 반영한 추천 랭킹 알고리즘 개발
