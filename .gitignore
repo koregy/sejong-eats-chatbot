@@ -1,0 +1,23 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# AWS & Terraform
+.aws/
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/.terraform.lock.hcl
+infra/terraform.tfvars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code 설정
+.vscode/
