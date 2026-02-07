@@ -3,19 +3,19 @@ AWS Serverless 아키텍처와 생성형 AI(Amazon Bedrock)를 활용하여 구�
 Terraform을 이용한 IaC(Infrastructure as Code)를 구현하여 인프라의 자동 배포 및 관리가 가능하며, 자연어 처리(NLP)를 통해 사용자의 의도를 파악하고 맞춤형 식당 정보를 제공합니다.
 
 ## 실행 화면 (Demo)
-demo1.png
-demo2.png
+![Demo1 Image](./demo1.png)
+![Demo2 Image](./demo2png)
 
 ## 시스템 아키텍처
 사용자의 요청은 웹 프론트엔드에서 AWS Lambda로 전달되며, Lambda 내부에서 AI 모델(Claude 3)과 데이터베이스(DynamoDB)를 참조하여 최적의 응답을 생성합니다.
 
 ```mermaid
 graph LR
-    User[사용자] -->|Web Chat| Frontend[Frontend (HTML/JS)]
-    Frontend -->|REST API| LambdaURL[AWS Lambda Function URL]
-    LambdaURL --> Lambda[Backend Lambda (Python)]
-    Lambda -->|Intent Analysis| Bedrock[Amazon Bedrock (Claude 3)]
-    Lambda -->|Query Data| DynamoDB[(Amazon DynamoDB)]
+    A[사용자] -->|Web Chat| B["Frontend (HTML/JS)"]
+    B -->|REST API| C[AWS Lambda Function URL]
+    C --> D[Backend Lambda (Python)]
+    D -->|Intent Analysis| E[Amazon Bedrock (Claude 3)]
+    D -->|Query Data| F[(Amazon DynamoDB)]
 
 기술 스택 (Tech Stack)
 Infrastructure
