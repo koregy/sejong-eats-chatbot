@@ -20,7 +20,7 @@ graph LR;
     Python];
     D -->|Intent Analysis| E[Amazon Bedrock 
     Claude 3];
-    D -->|Query Data| F[(Amazon DynamoDB)];
+    D -->|Query Data| F[Amazon DynamoDB];
 
 기술 스택 (Tech Stack)
 Infrastructure
