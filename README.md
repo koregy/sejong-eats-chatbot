@@ -18,7 +18,7 @@ graph LR;
     C --> D[Backend Lambda<br/>Python];
     D -->|Intent Analysis| E[Amazon Bedrock<br/>Claude 3];
     D -->|Query Data| F[Amazon DynamoDB];
-
+```
 
 ## 기술 스택 (Tech Stack)
 Infrastructure
@@ -74,12 +74,15 @@ cd infra
 terraform init
 terraform plan
 terraform apply
+```
 - 배포 완료 후 출력되는 function_url을 복사하여 프론트엔드 설정에 사용합니다.
 
 3. 데이터 마이그레이션
 로컬의 JSON 데이터를 DynamoDB 테이블로 업로드합니다.
 # 프로젝트 루트 디렉토리에서 실행
+```bash
 python upload_real_data.py
+```
 
 4. 프론트엔드 설정
 frontend/index.html 파일을 열고, 코드 상단 API_URL 상수에 Terraform 배포 결과로 얻은 URL을 입력합니다.
