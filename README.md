@@ -20,7 +20,7 @@ graph LR;
     D -->|Query Data| F[Amazon DynamoDB];
 
 
-기술 스택 (Tech Stack)
+## 기술 스택 (Tech Stack)
 Infrastructure
 - Terraform: AWS 리소스(Lambda, DynamoDB, IAM, Function URL)의 프로비저닝 및 상태 관리
 - AWS Serverless: 서버 관리 부담이 없는 Lambda 기반 컴퓨팅 환경 구축
@@ -34,7 +34,7 @@ Frontend
 - HTML5 / JavaScript (Vanilla): 외부 라이브러리 의존성을 최소화한 경량 웹 클라이언트
 - Tailwind CSS: 유틸리티 퍼스트 기반의 반응형 UI 디자인
 
-주요 기능
+## 주요 기능
 1. AI 기반 자연어 검색
 - 단순 키워드 매칭이 아닌, 문맥을 이해하는 검색을 지원합니다.
 - 예: "매운 국물 요리 추천해줘" -> "매운", "국물" 키워드 추출 및 검색
@@ -45,7 +45,7 @@ Frontend
 4. 랜덤 추천 알고리즘
 - 검색 결과 내에서 무작위 셔플링을 통해 사용자에게 다양한 선택지를 제안합니다.
 
-프로젝트 구조
+## 프로젝트 구조
 sejong_eats_v2/
 ├── backend/
 │   └── index.py            # AWS Lambda 메인 핸들러 (비즈니스 로직)
@@ -59,7 +59,7 @@ sejong_eats_v2/
 ├── operating_hours.json    # 초기 데이터셋 (영업 시간)
 └── upload_real_data.py     # 데이터 마이그레이션 스크립트
 
-설치 및 배포 (Deployment)
+## 설치 및 배포 (Deployment)
 이 프로젝트는 Terraform을 사용하여 AWS 환경에 자동으로 배포됩니다.
 
 1. 사전 요구 사항
@@ -69,6 +69,7 @@ sejong_eats_v2/
 
 2. 인프라 배포
 Terraform을 초기화하고 AWS 리소스를 생성합니다.
+```bash
 cd infra
 terraform init
 terraform plan
