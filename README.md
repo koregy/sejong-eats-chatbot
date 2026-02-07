@@ -46,6 +46,7 @@ Frontend
 - 검색 결과 내에서 무작위 셔플링을 통해 사용자에게 다양한 선택지를 제안합니다.
 
 ## 프로젝트 구조
+```bash
 sejong_eats_v2/
 ├── backend/
 │   └── index.py            # AWS Lambda 메인 핸들러 (비즈니스 로직)
@@ -58,6 +59,7 @@ sejong_eats_v2/
 ├── restaurants.json        # 초기 데이터셋 (식당 정보)
 ├── operating_hours.json    # 초기 데이터셋 (영업 시간)
 └── upload_real_data.py     # 데이터 마이그레이션 스크립트
+```
 
 ## 설치 및 배포 (Deployment)
 이 프로젝트는 Terraform을 사용하여 AWS 환경에 자동으로 배포됩니다.
@@ -79,7 +81,7 @@ terraform apply
 
 3. 데이터 마이그레이션
 로컬의 JSON 데이터를 DynamoDB 테이블로 업로드합니다.
-# 프로젝트 루트 디렉토리에서 실행
+프로젝트 루트 디렉토리에서 실행
 ```bash
 python upload_real_data.py
 ```
