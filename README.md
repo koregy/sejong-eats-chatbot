@@ -12,15 +12,15 @@ Terraform을 이용한 IaC(Infrastructure as Code)를 구현하여 인프라의 
 사용자의 요청은 웹 프론트엔드에서 AWS Lambda로 전달되며, Lambda 내부에서 AI 모델(Claude 3)과 데이터베이스(DynamoDB)를 참조하여 최적의 응답을 생성합니다.
 
 ```mermaid
-graph LR
+graph LR;
     A[사용자] -->|Web Chat| B[Frontend
-    HTML/JS]
-    B -->|REST API| C[AWS Lambda URL]
+    HTML/JS];
+    B -->|REST API| C[AWS Lambda URL];
     C --> D[Backend Lambda
-    Python]
+    Python];
     D -->|Intent Analysis| E[Amazon Bedrock 
-    Claude 3]
-    D -->|Query Data| F[(Amazon DynamoDB)]
+    Claude 3];
+    D -->|Query Data| F[(Amazon DynamoDB)];
 
 기술 스택 (Tech Stack)
 Infrastructure
